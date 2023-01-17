@@ -25,10 +25,7 @@ public class MakeChange {
 		isSufficient = moneyGiven >= itemPrice;
 		double changeGiven = moneyGiven - itemPrice;
 
-		// display a default if money given was exact amount, too much or too little.
-//total = 16.73 -- moneyGiven = 20 --changeGiven = 3.27 
-		//16.73*100= 1673 --
-		//1673/1000
+		
 		if (isSufficient) {
 			System.out.println("Payment Accepted! ");
 			System.out.printf("TOTAL CHANGE: $  %.2f", changeGiven);
@@ -60,20 +57,11 @@ public class MakeChange {
 			}
 			
 			
-			// call the method for change amount given
-			// sending moneyGiven, itemPrice, and changeGiven into new method
 		} else {
 			System.out.println("Insufficient Funds for Transaction.");
-			System.out.printf("Customer owes: $ %.2f ", changeGiven * -1); // -1 in the statement bc I got a negative
-																			// here
+			System.out.printf("Customer owes: $ %.2f ", changeGiven * -1); 
 		}
 	}
-
-//		Calculate the amount of change given back to the customer in:
-//		$20 ,$10 ,$5 ,$1, .25c, .10c, .05c, .01c
-
-	
-
 		
 }
-//			
+		
