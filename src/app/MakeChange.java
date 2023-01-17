@@ -39,10 +39,25 @@ public class MakeChange {
 			int one = (int) changeGiven % 500 / 100;
 			int quarter = (int) changeGiven % 100 / 25;
 			int dime = (int) changeGiven % 25 / 10;
-			int nickel = (int) changeGiven % 10;
+			int nickel = (int) changeGiven % 10 / 5;
 			int penny = (int) (changeGiven % 5) / 1;
-			System.out.println(changeGiven);
-			System.out.println(changeGiven);
+			if (twenties > 0) {
+				System.out.print("\n Twenty $ Bill: " + twenties);
+			}if (ten > 0) {
+				System.out.print("\n Ten $ Bill: " + ten);
+			}if (five > 0) {
+				System.out.print("\n Five $ Bill: " + five);
+			}if (one > 0) {
+				System.out.print("\n One $ Bill: " + one);
+			}if (quarter > 0) {
+				System.out.print("\n Number of Quarters: " + quarter);
+			}if (dime > 0) {
+				System.out.print("\n Number of Dimes: " + dime);
+			}if (nickel > 0) {
+				System.out.print("\n Number of Nickels: " + nickel);
+			}if (penny > 0) {
+				System.out.print("\n Number of Pennies: " + penny);
+			}
 			
 			
 			// call the method for change amount given
